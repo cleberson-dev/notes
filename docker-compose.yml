@@ -1,0 +1,14 @@
+version: "3"
+services:
+  db_server:
+    image: postgres
+    ports:
+      - "5432:5432"
+    env_file:
+      - config/psql-server.env
+  db_client:
+    image: dpage/pgadmin4
+    ports:
+      - "3000:80"
+    env_file:
+      - config/psql-client.env
