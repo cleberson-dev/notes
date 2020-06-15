@@ -3,12 +3,11 @@ package com.clebersondev.notes.models;
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
-import java.sql.Timestamp;
 
 @Entity
 public class Note {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @NotBlank
@@ -18,11 +17,9 @@ public class Note {
     @NotBlank
     private String content;
 
-    @ManyToOne(fetch = FetchType.EAGER, optional = false)
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name="user_id", nullable = false)
     private User author;
-
-    private Timestamp createdAt;
 
     public Note() {}
 
@@ -30,7 +27,6 @@ public class Note {
         this.title = title;
         this.content = content;
         this.author = author;
-        this.createdAt = new Timestamp(System.currentTimeMillis()); // Momento de criação
     }
 
     public Long getId() {
@@ -63,13 +59,5 @@ public class Note {
 
     public void setAuthor(User author) {
         this.author = author;
-    }
-
-    public Timestamp getCreatedAt() {
-        return createdAt;
-    }
-
-    public void setCreatedAt(Timestamp createdAt) {
-        this.createdAt = createdAt;
     }
 }
