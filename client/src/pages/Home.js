@@ -12,8 +12,8 @@ import AddIcon from "@material-ui/icons/Add";
 import CreateNoteModal from "../components/CreateNoteModal";
 import EditNoteModal from "../components/EditNoteModal";
 import NoteModal from "../components/NoteModal";
-import AppContext from "../store";
-import { noteSchema } from "../validators";
+import AppContext from "../utils/store";
+import { noteSchema } from "../utils/validators";
 import Joi from "@hapi/joi";
 
 function Note({ title, content, onClick }) {

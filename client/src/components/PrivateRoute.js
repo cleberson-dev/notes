@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 
 import { Route, Redirect } from "react-router-dom";
-import AppContext from "../store";
+import AppContext from "../utils/store";
 
 function PrivateRoute({ component: Component, ...rest }) {
     const { authCredential: isAuthenticated } = useContext(AppContext);

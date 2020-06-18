@@ -12,7 +12,7 @@ import CircularProgress from "@material-ui/core/CircularProgress";
 import CloseIcon from "@material-ui/icons/Close";
 import AddIcon from "@material-ui/icons/NoteAdd";
 
-import AppContext from "../store";
+import AppContext from "../utils/store";
 
 const Field = (props) => (
   <Box mb={2}>

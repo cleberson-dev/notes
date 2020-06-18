@@ -8,9 +8,9 @@ import Button from "@material-ui/core/Button";
 import Box from "@material-ui/core/Box";
 import Typography from "@material-ui/core/Typography";
 
-import AppContext from "../store";
+import AppContext from "../utils/store";
 import { findErrorFactory, errorMessages } from "../utils/errors";
-import { userLoginSchema } from "../validators";
+import { userLoginSchema } from "../utils/validators";
 
 function LoginPage() {
   const history = useHistory();

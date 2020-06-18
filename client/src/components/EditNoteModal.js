@@ -12,7 +12,7 @@ import Button from "@material-ui/core/Button";
 import CloseIcon from "@material-ui/icons/Close";
 import EditIcon from "@material-ui/icons/Edit";
 
-import AppContext from '../store';
+import AppContext from '../utils/store';
 
 const errorMessages = {
     empty: 'Campo vazio. Insira n caracteres'

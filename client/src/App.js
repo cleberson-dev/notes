@@ -18,9 +18,7 @@ import HomePage from "./pages/Home";
 import LoginPage from "./pages/Login";
 import RegisterPage from "./pages/Register";
 
-import AppContext from "./store";
-
-import "./App.css";
+import AppContext from "./utils/store";
 
 function App() {
   const existingCredentials = JSON.parse(localStorage.getItem("credentials"));
