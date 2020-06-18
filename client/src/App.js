@@ -14,6 +14,7 @@ import AccountIcon from "@material-ui/icons/AccountCircle";
 import MyAlert from "./components/MyAlert";
 import PrivateRoute from "./components/PrivateRoute";
 
+import HomePage from "./pages/Home";
 import MainPage from "./pages/Main";
 import LoginPage from "./pages/Login";
 import RegisterPage from "./pages/Register";
@@ -89,6 +90,7 @@ function App() {
 
           <Container maxWidth="lg">
             <Switch>
+              <Route exact path="/" component={HomePage} />
               <PrivateRoute exact path="/app" component={MainPage} />
               <Route path="/login" component={LoginPage} />
               <Route path="/register" component={RegisterPage} />
