@@ -6,7 +6,9 @@
   "scripts": {
     "start": "concurrently \"npm run start:server\" \"npm run start:client\"",
     "start:server": "cd server && ./gradlew bootRun",
-    "start:client": "cd client && npm start"
+    "start:client": "cd client && npm start",
+    "install": "npm run install:client",
+    "install:client": "cd client && npm install"
   },
   "repository": {
     "type": "git",
