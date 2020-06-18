@@ -4,17 +4,21 @@ Aplicação Web Full-Stack com Java (Spring) e PostgreSQL (Banco de dados) no ba
 
 
 
+
+
+
+
 ## Uso
 
-### Pré-requerimentos
+Antes, é necessário que:
 
 - Tenha Java instalado em sua máquina
 - Tenha Node.js instalado em sua máquina
-- Assegure que seu banco de dados SQL esteja rodando no momento da utilização do app.
+- Seu banco de dados SQL esteja em execução.
 
 
 
-1. Configure o seu banco de dados para o projeto (escolha o BD que preferir) em `src/main/resources/application.properties` (crie o arquivo nesse diretório, caso não exista):
+1. Configure o seu banco de dados para a aplicação Spring (escolha o BD que preferir) em `src/main/resources/application.properties` (crie o arquivo nesse diretório, caso não exista):
 
     ``````
     spring.datasource.url=<url-do-banco>
@@ -23,10 +27,18 @@ Aplicação Web Full-Stack com Java (Spring) e PostgreSQL (Banco de dados) no ba
     spring.jpa.hibernate.ddl-auto=update
     ``````
     
-2. Instale as dependências para o cliente, no diretório do cliente em ():
-
-3. Execute a aplicação Spring na linha de comandos:
+2. Instale as dependências necessárias:
 
     ``````bash
-    ./gradlew bootRun
+    npm run install
     ``````
+
+3. Inicie a aplicação:
+
+    ``````bash
+    npm run start
+    ``````
+
+    O servidor e o cliente estão rodando em um ambiente de desenvolvimento disponíveis respectivamente em: `http://localhost:8080` e `http://localhost:3000`
+
+    Faça bom uso! :smile:
