@@ -1,0 +1,25 @@
+{
+  "name": "notes",
+  "version": "1.0.0",
+  "description": "Aplicação Web Full-Stack com Java (Spring) e PostgreSQL (Banco de dados) no back end e React.js no front end.",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run start:server\" \"npm run start:client\"",
+    "start:server": "cd server && ./gradlew bootRun",
+    "start:client": "cd client && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cleberson-dev/notes.git"
+  },
+  "keywords": [],
+  "author": "Cleberson F R Junior",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cleberson-dev/notes/issues"
+  },
+  "homepage": "https://github.com/cleberson-dev/notes#readme",
+  "dependencies": {
+    "concurrently": "^5.2.0"
+  }
+}
