@@ -56,20 +56,22 @@ function App() {
               >
                 <Typography variant="h6">Note to Self</Typography>
                 <Box display="flex" alignItems="center" position="relative">
-                  { authCredential ? (
+                  {authCredential ? (
                     <Button
-                    aria-controls="profile-menu"
-                    aria-haspopup="true"
-                    startIcon={<AccountIcon />}
-                    onClick={(e) => setAnchorEl(e.currentTarget)}
-                  >
-                    Olá, {authCredential.user.username}!
-                  </Button>) : (
-                    <Button>
-                      <Link to="/login">Entrar</Link>
+                      aria-controls="profile-menu"
+                      aria-haspopup="true"
+                      startIcon={<AccountIcon />}
+                      onClick={(e) => setAnchorEl(e.currentTarget)}
+                      color="inherit"
+                    >
+                      Olá, {authCredential.user.name}!
                     </Button>
+                  ) : (
+                    <Link to="/login">
+                      <Button>Entrar</Button>
+                    </Link>
                   )}
-                  
+
                   <Menu
                     id="profile-menu"
                     onClose={() => setAnchorEl(null)}
@@ -81,7 +83,9 @@ function App() {
                         setAuth(null);
                         setAnchorEl(null);
                       }}
-                    >Sair</MenuItem>
+                    >
+                      Sair
+                    </MenuItem>
                   </Menu>
                 </Box>
               </Box>

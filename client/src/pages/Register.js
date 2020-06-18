@@ -17,7 +17,7 @@ function RegisterPage() {
     >
       <Box width="100%" mb={6}>
         <Typography variant="h2" align="left">
-          Entre!
+          Crie uma nova conta
         </Typography>
       </Box>
       <Box mb={5}>
@@ -39,7 +39,7 @@ function RegisterPage() {
       </Box>
       <Box alignSelf="start">
         <Button variant="contained" color="primary">
-          Entrar
+          Registrar
         </Button>
       </Box>
     </Box>

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 import { Typography, Grid } from "@material-ui/core";
 import Box from "@material-ui/core/Box";
+import MuiLink from "@material-ui/core/Button";
 
 function HomePage() {
   return (
@@ -15,10 +16,14 @@ function HomePage() {
       <Box width="50%" mt={2}>
         <Grid container spacing={2}>
             <Grid item>
-                <Link to="/login" color="primary">Entrar</Link>
+                <Link to="/login">
+                  <MuiLink variant="contained" color="primary">Entrar</MuiLink>
+                </Link>
             </Grid>
             <Grid item>
-                <Link to="/register" color="primary">Registrar</Link>
+                <Link to="/register">
+                  <MuiLink variant="contained" color="primary">Registrar</MuiLink>
+                </Link>
             </Grid>
         </Grid>
       </Box>

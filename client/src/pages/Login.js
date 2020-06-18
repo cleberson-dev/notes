@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import axios from "axios";
 import Joi from "@hapi/joi";
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
@@ -38,7 +38,7 @@ function LoginPage() {
         .then((res) => {
           const { data: user, accessToken: token } = res.data;
           setAuthCredential({ user, token });
-          history.push("/");
+          history.push("/main");
         })
         .catch(console.error);
     } catch ({ details }) {
@@ -77,7 +77,7 @@ function LoginPage() {
           }
         />
       </Box>
-      <Box mb={5}>
+      <Box mb={2}>
         <TextField
           id="password"
           label="Senha"
@@ -91,6 +91,9 @@ function LoginPage() {
             Boolean(passwordError) && errorMessages[passwordError.type]
           }
         />
+      </Box>
+      <Box mb={5}>
+        <Typography variant="span">Não está registrado ainda? <Link to="/register">Crie uma conta</Link></Typography>
       </Box>
       <Box alignSelf="start">
         <Button variant="contained" color="primary" onClick={handleBtnClick}>
