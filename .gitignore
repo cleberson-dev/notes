@@ -34,3 +34,6 @@ out/
 /config/psql-client.env
 /config/psql-server.env
 application.properties
+docker-compose.yml
+
+/node_modules

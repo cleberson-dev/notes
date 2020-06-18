@@ -9,6 +9,6 @@ services:
   db_client:
     image: dpage/pgadmin4
     ports:
-      - "3000:80"
+      - "4000:80"
     env_file:
       - config/psql-client.env
