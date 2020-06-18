@@ -11,8 +11,8 @@ function HomePage() {
         height="90vh"
         display="flex" flexDirection="column" justifyContent="center"
     >
-      <Typography variant="h1">Lembre o que você esqueceu, anote o que precisa ser anotado!</Typography>
-      <Box width="50%">
+      <Typography variant="h2">Lembre o que você esqueceu. Guarde para você.</Typography>
+      <Box width="50%" mt={2}>
         <Grid container spacing={2}>
             <Grid item>
                 <Link to="/login" color="primary">Entrar</Link>
