@@ -15,9 +15,7 @@ import { userLoginSchema } from "../utils/validators";
 function LoginPage() {
   const history = useHistory();
   const { authCredential, setAuthCredential } = useContext(AppContext);
-  if (authCredential) {
-    history.push("/");
-  }
+  if (authCredential) history.push("/");
 
   const [usernameOrEmail, setUsernameOrEmail] = useState("");
   const [password, setPassword] = useState("");
