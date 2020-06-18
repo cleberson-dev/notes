@@ -16,12 +16,12 @@ function HomePage() {
       <Box width="50%" mt={2}>
         <Grid container spacing={2}>
             <Grid item>
-                <Link to="/login">
+                <Link to="/login" style={{ textDecoration: 'none' }}>
                   <MuiLink variant="contained" color="primary">Entrar</MuiLink>
                 </Link>
             </Grid>
             <Grid item>
-                <Link to="/register">
+                <Link to="/register" style={{ textDecoration: 'none'}}>
                   <MuiLink variant="contained" color="primary">Registrar</MuiLink>
                 </Link>
             </Grid>

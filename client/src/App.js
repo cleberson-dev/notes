@@ -54,7 +54,9 @@ function App() {
                 alignItems="center"
                 justifyContent="space-between"
               >
-                <Typography variant="h6">Note to Self</Typography>
+                <Typography variant="h6">
+                  <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>Note to Self</Link>
+                </Typography>
                 <Box display="flex" alignItems="center" position="relative">
                   {authCredential ? (
                     <Button
@@ -67,8 +69,8 @@ function App() {
                       Olá, {authCredential.user.name}!
                     </Button>
                   ) : (
-                    <Link to="/login">
-                      <Button>Entrar</Button>
+                    <Link to="/login" style={{ textDecoration: 'none', color: 'inherit' }}>
+                      <Button color="inherit">Entrar</Button>
                     </Link>
                   )}
 
