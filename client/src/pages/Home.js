@@ -11,7 +11,7 @@ function HomePage() {
         height="90vh"
         display="flex" flexDirection="column" justifyContent="center"
     >
-      <Typography variant="h1">Olá, mundo!</Typography>
+      <Typography variant="h1">Lembre o que você esqueceu, anote o que precisa ser anotado!</Typography>
       <Box width="50%">
         <Grid container spacing={2}>
             <Grid item>
