@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Route, Switch, useHistory, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
 import Box from "@material-ui/core/Box";
 import Container from "@material-ui/core/Container";
@@ -14,7 +14,7 @@ import AccountIcon from "@material-ui/icons/AccountCircle";
 import MyAlert from "./components/MyAlert";
 import PrivateRoute from "./components/PrivateRoute";
 
-import HomePage from "./pages/Home";
+import MainPage from "./pages/Main";
 import LoginPage from "./pages/Login";
 import RegisterPage from "./pages/Register";
 
@@ -89,7 +89,7 @@ function App() {
 
           <Container maxWidth="lg">
             <Switch>
-              <PrivateRoute exact path="/" component={HomePage} />
+              <PrivateRoute exact path="/app" component={MainPage} />
               <Route path="/login" component={LoginPage} />
               <Route path="/register" component={RegisterPage} />
             </Switch>

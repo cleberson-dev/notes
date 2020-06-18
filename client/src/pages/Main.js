@@ -45,7 +45,7 @@ function Note({ title, content, onClick }) {
   );
 }
 
-function HomePage() {
+function MainPage() {
   const [loadingNotes, setLoadingNotes] = useState(false);
   const [notes, setNotes] = useState([]);
   const [currentNote, setCurrentNote] = useState(null);
@@ -209,4 +209,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default MainPage;
