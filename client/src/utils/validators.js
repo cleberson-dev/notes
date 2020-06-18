@@ -22,12 +22,13 @@ export const userLoginSchema = Joi.object({
 });
 
 export const userRegisterSchema = Joi.object({
-    name: Joi.string(),
     username: Joi.string()
         .min(5)
         .required(),
+    email: Joi.string().email({ tlds: { allow: false }}).required(),
     password: Joi.string()
         .min(8)
         .max(15)
-        .required()
+        .required(),
+    name: Joi.string()
 });

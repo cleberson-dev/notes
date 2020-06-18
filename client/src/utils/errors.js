@@ -3,6 +3,6 @@ export const findErrorFactory = (errors) => (
 );
 
 export const errorMessages = {
-    duplicate: 'Já existente, insira outro',
-    empty: 'Campo obrigatório. Insira um valor'
+    ["duplicate"]: 'Já existente, insira outro',
+    ["string.empty"]: 'Campo obrigatório. Insira um valor'
 };
