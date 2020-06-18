@@ -12,7 +12,7 @@ function HomePage() {
         height="90vh"
         display="flex" flexDirection="column" justifyContent="center"
     >
-      <Typography variant="h2">Lembre o que você esqueceu. Guarde para você.</Typography>
+      <Typography variant="h2">📝<br/>Lembre o que você esqueceu. Guarde para você. </Typography>
       <Box width="50%" mt={2}>
         <Grid container spacing={2}>
             <Grid item>
