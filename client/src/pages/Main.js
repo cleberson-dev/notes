@@ -30,9 +30,9 @@ function Note({ title, content, onClick }) {
       <Paper>
         <Box p={2} bgcolor="warning.light">
           <Box whiteSpace="nowrap" textOverflow="ellipsis" overflow="hidden">
-          <Typography align="left" variant="h5">
-            {title}
-          </Typography>
+            <Typography align="left" variant="h5">
+              {title}
+            </Typography>
           </Box>
           <Typography align="left" variant="body1">
             <Box maxHeight="10rem" width="100%">
@@ -97,7 +97,10 @@ function MainPage() {
         });
     } catch (error) {
       const { details } = error;
-      const errors = details.map(detail => ({ field: detail.path[0], type: detail.type }));
+      const errors = details.map((detail) => ({
+        field: detail.path[0],
+        type: detail.type,
+      }));
       console.log(errors);
       setCreationErrors(errors);
     }
@@ -165,7 +168,6 @@ function MainPage() {
           }}
         />
       )}
-
       <Box mt={4}>
         <Box position="fixed" bottom={50} right={60}>
           <Fab

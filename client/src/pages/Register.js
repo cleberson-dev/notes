@@ -45,7 +45,7 @@ function RegisterPage() {
       axios
         .post("http://localhost:8080/api/auth/register", newUser)
         .then((res) => {
-          history.push("/main");
+          history.push("/login");
         })
         .catch(console.log);
     } catch ({ details }) {

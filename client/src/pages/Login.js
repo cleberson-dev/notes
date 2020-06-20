@@ -36,7 +36,7 @@ function LoginPage() {
         .then((res) => {
           const { data: user, accessToken: token } = res.data;
           setAuthCredential({ user, token });
-          history.push("/main");
+          history.push("/app");
         })
         .catch(console.error);
     } catch ({ details }) {
