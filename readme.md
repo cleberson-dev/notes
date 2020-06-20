@@ -2,7 +2,7 @@
 
 Aplicação Web Full-Stack com Java (Spring) e PostgreSQL (Banco de dados) no back end e React.js no front end.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IgOYOpcLSDU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![Link para video demonstração da aplicação](https://img.youtube.com/vi/IgOYOpcLSDU/0.jpg)](https://www.youtube.com/watch?v=IgOYOpcLSDU)
 
 
 
